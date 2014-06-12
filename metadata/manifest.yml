@@ -12,6 +12,8 @@ Categories:
 - embedded
 Provides:
 - ansible
+Endpoints:
+- Private-IP-Name: IP
 Scaling:
   Min: 1
   Max: 1

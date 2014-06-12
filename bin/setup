@@ -5,9 +5,8 @@ git clone git://github.com/ansible/ansible.git
 source ansible/hacking/env-setup
 mkdir -p local/lib/python2.6/site-packages
 export PYTHONPATH=$OPENSHIFT_DATA_DIR/local/lib/python2.6/site-packages:$PYTHONPATH
-easy_install --prefix=$OPENSHIFT_DATA_DIR/local paramiko PyYAML jinja2 httplib2
-# easy_install --prefix=$OPENSHIFT_DATA_DIR/local PyYAML
-# easy_install --prefix=$OPENSHIFT_DATA_DIR/local jinja2
-# easy_install --prefix=$OPENSHIFT_DATA_DIR/local httplib2
+easy_install --prefix=$OPENSHIFT_DATA_DIR/local paramiko
+easy_install --prefix=$OPENSHIFT_DATA_DIR/local PyYAML
+easy_install --prefix=$OPENSHIFT_DATA_DIR/local jinja2
+easy_install --prefix=$OPENSHIFT_DATA_DIR/local httplib2
 echo $OPENSHIFT_ANSIBLE_IP > $OPENSHIFT_DATA_DIR/ansible_hosts
-export ANSIBLE_HOSTS=$OPENSHIFT_DATA_DIR/ansible_hosts
