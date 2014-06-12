@@ -1,0 +1,17 @@
+---
+Name: ansible
+Cartridge-Short-Name: ANSIBLE
+Architecture: noarch
+Display-Name: Ansible
+Description: Utility
+Version: '0.0.1'
+Cartridge-Version: 0.0.1
+Cartridge-Vendor: andershedstrom
+License: BSD
+Categories:
+- embedded
+Provides:
+- ansible
+Scaling:
+  Min: 1
+  Max: 1
