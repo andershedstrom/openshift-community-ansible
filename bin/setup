@@ -9,4 +9,4 @@ easy_install --prefix=$OPENSHIFT_DATA_DIR/local paramiko
 easy_install --prefix=$OPENSHIFT_DATA_DIR/local PyYAML
 easy_install --prefix=$OPENSHIFT_DATA_DIR/local jinja2
 easy_install --prefix=$OPENSHIFT_DATA_DIR/local httplib2
-echo $OPENSHIFT_ANSIBLE_IP > $OPENSHIFT_DATA_DIR/ansible_hosts
+eval echo "\$OPENSHIFT_"${OPENSHIFT_APP_NAME^^}"_IP" > $OPENSHIFT_DATA_DIR/ansible_hosts
